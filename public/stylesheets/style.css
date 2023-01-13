@@ -1,8 +1,291 @@
 body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00b7ff;
+/* homepage */
+.homepageH1 {
+  display: flex;
+  flex-direction: row;
+  width: 97%;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-size: 32px;
+  color: #333;
+  text-shadow: 2px 2px #ccc;
+}
+.homepage-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 100px;
+  margin-top: 50px;
+}
+.homepageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30%;
+  text-align: justify;
+}
+.homepageContent h2 {
+  margin-bottom: 40px;
+  margin-top: 175px;
+  text-align: center;
+}
+
+.myPic img {
+  height: 550px;
+  border-radius: 50px;
+}
+
+/* layout page*/
+.headerPage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #34495e;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.headerPage a {
+  width: 10%;
+  color: #ecf0f1;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.headerPage a:hover {
+  color: #f44336;
+}
+
+.headerPage a:link {
+  text-decoration: none;
+}
+.headerPage a:visited {
+  text-decoration: none;
+}
+
+.homeFooter {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #34495e;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+}
+
+.homeFooter p {
+  margin-top: 10px;
+  margin-left: 30px;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/*drones page*/
+.dronesPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.listDrones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid #ccc;
+  width: 300px;
+  margin-top: 50px;
+  text-align: center;
+  width: 20%;
+  height: 700px;
+  border-radius: 10px;
+}
+
+.listPageH1 {
+  display: flex;
+  flex-direction: row;
+  width: 97%;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-size: 32px;
+  color: #333;
+  text-shadow: 2px 2px #ccc;
+}
+
+.listDrones img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.listDrones h3 {
+  margin-bottom: 50px;
+  color: #cc0000;
+  font-size: 26px;
+}
+.listDrones img {
+  width: 100%;
+}
+
+.listDrones img:hover {
+  transform: scale(1.1);
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+.buttonList {
+  margin-top: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonList a {
+  padding: 0.5rem 1rem;
+  background-color: #979699;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.listDrones h4 {
+  font-weight: bold;
+}
+
+.listDrones p {
+  text-align: justify;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.buttonList a:hover {
+  background-color: #f44336;
+  color: black;
+}
+
+.btnDroneList {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.btnSummitDrone {
+  padding: 0.5rem 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btnSummitDrone:hover {
+  background-color: #cc0000;
+}
+
+/* create form page */
+
+.createFormPage {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #ccc;
+  margin-bottom: auto;
+  height: 900px;
+}
+
+.createFormPage h2 {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #333;
+  text-shadow: 2px 2px #ccc;
+}
+
+.createFormPage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.createFormPage label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.createFormPage input {
+  width: 50%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.createFormPage input:focus {
+  border: 2px solid #e04646;
+  box-shadow: 0px 0px 10px #f44336;
+}
+
+.createFormPage textarea {
+  width: 50%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.createFormPage textarea:focus {
+  border: 2px solid #e04646;
+  box-shadow: 0px 0px 10px #f44336;
+}
+
+.createFormPage button[type="submit"] {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.createFormPage button[type="submit"]:hover {
+  background-color: #cc0000;
+  box-shadow: 0px 0px 10px #e64067;
+}
+
+.createFormPage .btnGoBack {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #333;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  width: 15%;
+  height: 70px;
+  display: flex;
+  margin-left: 820px;
+  align-items: center;
+  padding: 2rem 4.2rem;
+}
+
+.createFormPage .btnGoBack:hover {
+  color: white;
+  background-color: #34495e;
 }

@@ -1,1 +1,26 @@
-<h2>Available drones</h2>
+<section>
+  <h1 class="listPageH1">DRONES</h1>
+  <div class="dronesPage">
+
+    {{#each listOfDrones}}
+      <div class="listDrones">
+        <h3>{{name}}</h3>
+        <img src="{{image}}" alt="drone pic" />
+        <h4>Price: {{price}}</h4>
+        <div class="descriptionDrones">
+          <p>Description: {{description}}</p>
+        </div>
+        <div class="buttonList">
+          <a href="/drones/{{_id}}/edit">Edit</a>
+          <form
+            action="/drones/{{_id}}/delete"
+            method="POST"
+            class="btnDroneList">
+            <input type="submit" value="Delete" class="btnSummitDrone" />
+          </form>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+</section>

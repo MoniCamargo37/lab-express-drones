@@ -1,1 +1,15 @@
-<h2>Create a new drone</h2>
+<div class="createFormPage">
+  <h2>Create a new drone</h2>
+  <form method="POST" action="/drones/create ">
+      <label>Drone's name</label>
+      <input required type="text" name="name" placeholder="{{name}}" />
+      <label>Image</label>
+      <input required type="text" name="image" placeholder="https...//" />
+      <label> Price</label>
+      <input required type="number" name="price" placeholder="{{price}}" />
+      <label>description</label>
+      <input required type="text" name="description" placeholder="{{description}}"/>
+    <button type="submit"> Add Drone</button>
+  </form>
+   <a href="/drones" class="btnGoBack">Go back to the list</a>
+</div>

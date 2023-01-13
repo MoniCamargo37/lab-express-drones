@@ -1,1 +1,19 @@
-<h2>Update the drone</h2>
+<div class="createFormPage">
+  <h2>Update the drone {{name}}</h2>
+  <form
+    method="POST"
+    action="
+/drones/{{_id}}/edit"
+  >
+    <label>Drone's name</label>
+    <input required type="text" name="name" value="{{name}}" />
+    <label>Image</label>
+    <input required type="text" name="image" value="{{image}}" />
+    <label> Price</label>
+    <input required type="number" name="price" value="{{price}}" />
+    <label>description</label>
+    <textarea required name="description">{{description}}</textarea>
+    <button type="submit" href="/drones">Save changes</button>
+  </form>
+  <a href="/drones" class="btnGoBack">go back to the list</a>
+</div>
