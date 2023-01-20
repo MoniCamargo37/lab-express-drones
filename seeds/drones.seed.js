@@ -28,14 +28,31 @@ const drones = [
 
   ];
 
+// mongoose
+//   .connect(MONGO_URL)
+//   .then((res) => console.log("connected to Seed database"))
+//   .then(() => {
+//     Drone.create(drones);
+//     mongoose.connection.close();
+
+//   })
+//   .catch((error) => console.log(error));
 mongoose
   .connect(MONGO_URL)
   .then((res) => console.log("connected to Seed database"))
   .then(() => {
-    Drone.create(drones);
-
+    // Delete existing docs
+    Drone.deleteMany({}, (err) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Drones deleted successfully");
+            // Create new docs
+            Drone.create(drones);
+            mongoose.connection.close();
+        }
+    });
   })
   .catch((error) => console.log(error));
-
 
   module.exports = Drone;

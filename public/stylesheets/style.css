@@ -202,6 +202,7 @@ body {
   box-shadow: 0px 0px 10px #ccc;
   margin-bottom: auto;
   height: 900px;
+
 }
 
 .createFormPage h2 {
@@ -275,17 +276,20 @@ body {
   text-decoration: none;
   background-color: #333;
   border-radius: 30px;
-  color: white;
-  font-size: 18px;
   width: 15%;
   height: 70px;
   display: flex;
-  margin-left: 820px;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 2rem 4.2rem;
+}
+.btnGoBack a {
+  color: rgb(228, 117, 144);
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.createFormPage .btnGoBack:hover {
+.btnGoBack a:hover {
   color: white;
-  background-color: #34495e;
+  text-decoration: none;
 }
